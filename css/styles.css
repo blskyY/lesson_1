@@ -1,3 +1,9 @@
+:root {
+    --main-color: white;
+    --second-color: #303030;
+    
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 
@@ -8,17 +14,38 @@ body {
     list-style: none;
 }
 
+.link {
+    text-decoration: none;
+}
 
-.header-link {
+.header-link,
+.header-tel {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: #ffffff;
+    color: var(--main-color);;
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: tomato;
 }
 
 .header {
-    background-color: #ffffff;
+    background-color: gray;
+}
+
+.header-btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--main-color);
 }
 
 /*h1, h2 {
